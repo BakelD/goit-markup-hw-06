@@ -402,6 +402,19 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-signup">
+          <p class="appeal-text">Подпишитесь на рассылку</p>
+
+          <form class="footer-form">
+            <div class="footer-form-wrapper">
+              <input type="email" name="email" placeholder="E-mail" class="footer-form-field" />
+              <button type="submit" class="btn footer-form-btn">
+                Подписаться <svg class="footer-form-icon"><use href="./img/sprite.svg#icon-telegram"></use></svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -412,6 +425,49 @@
             <use href="./img/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form class="modal-form">
+          <p class="modal-form-appeal">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label class="modal-form-label">
+            Имя
+            <span class="modal-form-wrapper">
+              <input type="text" name="name" class="modal-form-field" />
+              <svg class="modal-form-icon"><use href="./img/sprite.svg#icon-person"></use></svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            Телефон
+            <span class="modal-form-wrapper">
+              <input type="tel" name="phone" class="modal-form-field" />
+              <svg class="modal-form-icon"><use href="./img/sprite.svg#icon-tel-black"></use></svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            Почта
+            <span class="modal-form-wrapper">
+              <input type="email" name="email" class="modal-form-field" />
+              <svg class="modal-form-icon"><use href="./img/sprite.svg#icon-email-black"></use></svg>
+            </span>
+          </label>
+          <label class="modal-form-label">
+            Комментарий
+            <textarea name="message" placeholder="Введите текст" class="modal-form-textarea"></textarea>
+          </label>
+
+          <input
+            type="checkbox"
+            id="agreement"
+            name="agreement"
+            value="accept"
+            class="modal-form-checkbox vusually-hidden"
+          />
+          <label for="agreement" class="modal-form-agreement">
+            Соглашаюсь с рассылкой и принимаю <a href="" class="modal-form-link"> Условия договора</a>
+          </label>
+
+          <button type="submit" class="btn modal-form-btn">Отправить</button>
+        </form>
       </div>
     </div>
 
